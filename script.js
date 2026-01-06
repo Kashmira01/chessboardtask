@@ -64,7 +64,7 @@ function snapAndRedirect(piece) {
   piece.style.top  = `${center.y - 35}px`;
 
   setTimeout(() => {
-     window.open(piece.dataset.link, "_blank"); // ✅ NEW TAB
+     window.open(piece.dataset.link, "_blank"); //
   }, 300);
 }
 
@@ -76,3 +76,4 @@ function stopDrag() {
   document.removeEventListener("mousemove", drag);
   document.removeEventListener("mouseup", stopDrag);
 }
+
