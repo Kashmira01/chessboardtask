@@ -64,7 +64,7 @@ function snapAndRedirect(piece) {
   piece.style.top  = `${center.y - 35}px`;
 
   setTimeout(() => {
-    window.location.href = piece.dataset.link;
+     window.open(piece.dataset.link, "_blank"); // ✅ NEW TAB
   }, 300);
 }
 
